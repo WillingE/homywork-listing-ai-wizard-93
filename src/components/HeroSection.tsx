@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, ChevronRight } from "lucide-react";
-import TopMainImg from "@/assets/images/Top_Main_Img.png";
 
 const HeroSection = () => {
   return (
@@ -47,7 +46,7 @@ const HeroSection = () => {
           >
             <div className="aspect-video bg-homywork-darkPurple rounded-lg overflow-hidden">
               <img
-                src={TopMainImg}
+                src="https://i.imgur.com/i8pdkdB.png"
                 alt="Homywork Dashboard"
                 className="w-full h-full object-cover opacity-90 hover:opacity-100 transition-opacity"
               />

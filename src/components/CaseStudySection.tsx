@@ -1,7 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowUp } from "lucide-react";
-import Shop1Img from "@/assets/images/Shop1.png";
-import Shop2Img from "@/assets/images/Shop2.png";
 
 const CaseStudySection = () => {
   return (
@@ -21,12 +19,12 @@ const CaseStudySection = () => {
           <div className="relative animate-fade-up">
             <div className="flex flex-col space-y-4">
               <img
-                src={Shop1Img}
+                src="https://i.imgur.com/EEMwV9b.png"
                 alt="Before: HomyCasa product listing at $25.00"
                 className="rounded-lg shadow-md"
               />
               <img
-                src={Shop2Img}
+                src="https://i.imgur.com/gdRT3PC.png"
                 alt="After: HomyCasa product listing at $27.00"
                 className="rounded-lg shadow-md"
               />

@@ -1,8 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import { Link } from "react-router-dom";
-import { ROUTES } from "@/routes";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,9 +9,9 @@ const Navbar = () => {
     <header className="py-4 px-4 md:px-8 bg-white/90 backdrop-blur-sm fixed top-0 left-0 right-0 z-50 border-b">
       <div className="container-width flex items-center justify-between">
         <div className="flex items-center">
-          <Link to={ROUTES.HOME} className="text-2xl font-bold text-homywork-darkPurple">
+          <a href="#" className="text-2xl font-bold text-homywork-darkPurple">
             homywork
-          </Link>
+          </a>
         </div>
 
         {/* Desktop Navigation */}
@@ -30,12 +28,12 @@ const Navbar = () => {
           >
             Results
           </a>
-          <Link
-            to={ROUTES.ABOUT}
+          <a
+            href="#comparison"
             className="text-homywork-darkPurple/80 hover:text-homywork-purple transition-colors"
           >
-            About
-          </Link>
+            Comparison
+          </a>
           <a
             href="#testimonials"
             className="text-homywork-darkPurple/80 hover:text-homywork-purple transition-colors"
@@ -91,13 +89,13 @@ const Navbar = () => {
             >
               Results
             </a>
-            <Link
-              to={ROUTES.ABOUT}
+            <a
+              href="#comparison"
               className="py-2 text-homywork-darkPurple/80 hover:text-homywork-purple transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
-              About
-            </Link>
+              Comparison
+            </a>
             <a
               href="#testimonials"
               className="py-2 text-homywork-darkPurple/80 hover:text-homywork-purple transition-colors"
