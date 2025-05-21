@@ -1,29 +1,37 @@
 import { Card } from "@/components/ui/card";
 
+// 导入静态资源
+import amazonLogo from "@/assets/logos/Amazon_logo.svg.png";
+import walmartLogo from "@/assets/logos/Walmart_logo.svg";
+import wayfairLogo from "@/assets/logos/Wayfair_logo.svg.png";
+import temuLogo from "@/assets/logos/Temu_logo.svg.png";
+import maisonLogo from "@/assets/logos/Maisons_du_Monde_logo.svg.png";
+import shopifyLogo from "@/assets/logos/Shopify_logo_2018.svg.png";
+
 const marketplaces = [
   {
     name: "Amazon",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/1280px-Amazon_logo.svg.png",
+    logo: amazonLogo,
   },
   {
     name: "Walmart",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/c/ca/Walmart_logo.svg",
+    logo: walmartLogo,
   },
   {
     name: "Wayfair",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Wayfair_logo.svg/2560px-Wayfair_logo.svg.png",
+    logo: wayfairLogo,
   },
   {
     name: "Temu",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Temu_logo.svg/1024px-Temu_logo.svg.png",
+    logo: temuLogo,
   },
   {
     name: "Maison du Monde",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Maisons_du_Monde_logo.svg/2560px-Maisons_du_Monde_logo.svg.png",
+    logo: maisonLogo,
   },
   {
     name: "Shopify",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Shopify_logo_2018.svg/1280px-Shopify_logo_2018.svg.png",
+    logo: shopifyLogo,
   },
 ];
 
