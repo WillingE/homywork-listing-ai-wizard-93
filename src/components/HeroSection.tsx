@@ -12,10 +12,9 @@ const HeroSection = () => {
               Co-operator for Your Listings
             </h1>
             <p className="text-xl md:text-2xl text-homywork-gray mb-8 max-w-2xl">
-              {/* Go from idea to live SKU in under 2 minutes. Homywork handles
+              Go from idea to live SKU in under 2 minutes. Homywork handles
               images, titles, categories, and listings — so you can focus on
-              growth. */}
-              测试文字
+              growth.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
