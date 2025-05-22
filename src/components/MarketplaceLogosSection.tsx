@@ -8,10 +8,6 @@ const marketplaces = [
     logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/1280px-Amazon_logo.svg.png",
   },
   {
-    name: "Walmart",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/c/ca/Walmart_logo.svg",
-  },
-  {
     name: "Wayfair",
     logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Wayfair_logo.svg/2560px-Wayfair_logo.svg.png",
   },
@@ -26,6 +22,10 @@ const marketplaces = [
   {
     name: "Shopify",
     logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Shopify_logo_2018.svg/1280px-Shopify_logo_2018.svg.png",
+  },
+  {
+    name: "Walmart",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/c/ca/Walmart_logo.svg",
   },
 ];
 
@@ -80,7 +80,7 @@ const MarketplaceLogosSection = () => {
       
       <div className="container-width relative z-10">
         <div className="text-center mb-10">
-          <h3 className="text-2xl font-semibold mb-2 gradient-text">
+          <h3 className="text-2xl font-semibold mb-2 text-pink-500">
             Trusted by Sellers Across Major Marketplaces
           </h3>
           <div className="w-16 h-1 bg-gradient-to-r from-homywork-purple to-homywork-orange mx-auto"></div>
