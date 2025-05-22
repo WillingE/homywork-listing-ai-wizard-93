@@ -39,6 +39,9 @@ const HeroSection = () => {
           <p className="text-2xl md:text-3xl text-homywork-gray mb-8 max-w-3xl mx-auto animate-fade-up" style={{ animationDelay: "0.1s" }}>
             The AI Co-operator for Your Listings
           </p>
+          <p className="text-lg md:text-xl text-homywork-gray mb-8 max-w-3xl mx-auto animate-fade-up" style={{ animationDelay: "0.15s" }}>
+            Go from idea to live SKU in under 2 minutes. Homywork handles images, titles, categories, and listings — so you can focus on growth.
+          </p>
           <div className="flex justify-center animate-fade-up" style={{ animationDelay: "0.2s" }}>
             <Button
               size="lg"
