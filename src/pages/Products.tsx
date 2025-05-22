@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import FeaturesSection from "@/components/FeaturesSection";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Box, Briefcase, Brain, Layers, Image, FileText, ListOrdered } from "lucide-react";
+import { Box, Briefcase, Brain, Layers, Image, FileText, ListOrdered, Tag } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Products = () => {
@@ -48,7 +48,7 @@ const Products = () => {
                     your product listings with specialized agents for different aspects of your content.
                   </p>
                   
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
                     <Card>
                       <CardHeader className="pb-2">
                         <CardTitle className="flex items-center gap-2">
@@ -90,6 +90,21 @@ const Products = () => {
                         <p className="text-homywork-gray">
                           Generate compelling, SEO-optimized titles and descriptions that highlight key product
                           features and benefits to drive conversion rates.
+                        </p>
+                      </CardContent>
+                    </Card>
+
+                    <Card>
+                      <CardHeader className="pb-2">
+                        <CardTitle className="flex items-center gap-2">
+                          <Tag className="text-homywork-purple" size={20} />
+                          Attributes Agent
+                        </CardTitle>
+                      </CardHeader>
+                      <CardContent>
+                        <p className="text-homywork-gray">
+                          Intelligently identify and suggest optimal product attributes and specifications
+                          to improve searchability and match buyer expectations.
                         </p>
                       </CardContent>
                     </Card>
