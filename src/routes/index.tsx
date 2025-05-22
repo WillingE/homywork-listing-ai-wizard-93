@@ -1,7 +1,12 @@
+
 import { RouteObject } from 'react-router-dom';
 import Index from '@/pages/Index';
 import About from '@/pages/About';
 import NotFound from '@/pages/NotFound';
+import Products from '@/pages/Products';
+import CaseStudies from '@/pages/CaseStudies';
+import AboutUs from '@/pages/AboutUs';
+import Pricing from '@/pages/Pricing';
 
 /**
  * 应用路由配置
@@ -12,15 +17,25 @@ export const routes: RouteObject[] = [
     element: <Index />,
   },
   {
+    path: '/products',
+    element: <Products />,
+  },
+  {
+    path: '/case-studies',
+    element: <CaseStudies />,
+  },
+  {
+    path: '/about-us',
+    element: <AboutUs />,
+  },
+  {
+    path: '/pricing',
+    element: <Pricing />,
+  },
+  {
     path: '/about',
     element: <About />,
   },
-  // 添加其他路由 - 示例:
-  // {
-  //   path: '/contact',
-  //   element: <Contact />,
-  // },
-  
   // 捕获所有未匹配的路由，显示404页面
   {
     path: '*',
@@ -33,7 +48,9 @@ export const routes: RouteObject[] = [
  */
 export const ROUTES = {
   HOME: '/',
+  PRODUCTS: '/products',
+  CASE_STUDIES: '/case-studies',
+  ABOUT_US: '/about-us',
+  PRICING: '/pricing',
   ABOUT: '/about',
-  // 添加其他路由常量
-  // CONTACT: '/contact',
-}; 
+};
