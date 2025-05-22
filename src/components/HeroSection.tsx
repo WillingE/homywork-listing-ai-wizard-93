@@ -31,7 +31,7 @@ const HeroSection = () => {
       </div>
 
       {/* Main Hero Content */}
-      <div className="pt-32 pb-20 md:pt-40 md:pb-28 px-4 relative z-10">
+      <div className="pt-32 pb-12 md:pt-36 md:pb-16 px-4 relative z-10">
         <div className="container-width text-center">
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6 animate-fade-up">
             <span className="gradient-text">Homywork</span>
@@ -53,10 +53,10 @@ const HeroSection = () => {
         </div>
       </div>
       
-      {/* Hero Image with dynamic hover effect */}
-      <div className="w-full bg-gradient-to-b from-white to-homywork-lightPurple/20 px-4 pb-16 relative">
+      {/* Hero Image with dynamic hover effect - REDUCED SIZE */}
+      <div className="w-full bg-gradient-to-b from-white to-homywork-lightPurple/20 px-4 pb-12 relative">
         <div className="container-width">
-          <div className="relative rounded-xl overflow-hidden shadow-2xl animate-fade-up group cursor-pointer" 
+          <div className="relative max-w-4xl mx-auto rounded-xl overflow-hidden shadow-xl animate-fade-up group cursor-pointer" 
                style={{ animationDelay: "0.3s" }}>
             <div className="absolute inset-0 bg-gradient-to-tr from-homywork-purple/30 to-homywork-orange/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
             <img
@@ -64,9 +64,9 @@ const HeroSection = () => {
               alt="Homywork Dashboard"
               className="w-full h-auto group-hover:scale-105 transition-transform duration-700"
             />
-            <div className="absolute bottom-0 left-0 w-full p-8 bg-gradient-to-t from-black/70 to-transparent translate-y-full group-hover:translate-y-0 transition-transform duration-500 text-white text-left">
-              <h3 className="text-2xl font-bold mb-2">Sleek Dashboard Interface</h3>
-              <p>Manage all your marketplace listings from one central location</p>
+            <div className="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black/70 to-transparent translate-y-full group-hover:translate-y-0 transition-transform duration-500 text-white text-left">
+              <h3 className="text-xl font-bold mb-1">Sleek Dashboard Interface</h3>
+              <p className="text-sm">Manage all your marketplace listings from one central location</p>
             </div>
           </div>
         </div>
