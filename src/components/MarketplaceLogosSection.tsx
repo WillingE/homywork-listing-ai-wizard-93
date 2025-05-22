@@ -25,7 +25,7 @@ const marketplaces = [
   },
   {
     name: "Walmart",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Walmart_logo.svg/2560px-Walmart_logo.svg.png",
+    logo: "/lovable-uploads/0cf645b4-120b-4053-8933-dd953907145b.png",
   },
 ];
 
@@ -119,12 +119,7 @@ const MarketplaceLogosSection = () => {
                   <img
                     src={marketplace.logo}
                     alt={`${marketplace.name} logo`}
-                    className={`max-h-12 max-w-full object-contain transition-all duration-300 ${marketplace.name === 'Walmart' ? 'filter-none' : 'filter grayscale group-hover:grayscale-0'}`}
-                    style={{
-                      background: marketplace.name === 'Walmart' ? '#0071ce' : 'transparent',
-                      padding: marketplace.name === 'Walmart' ? '4px' : '0',
-                      borderRadius: marketplace.name === 'Walmart' ? '4px' : '0',
-                    }}
+                    className="max-h-12 max-w-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
                   />
                   <div className="absolute -bottom-4 left-0 right-0 mx-auto w-0 h-0.5 bg-homywork-purple group-hover:w-full transition-all duration-300"></div>
                 </div>
