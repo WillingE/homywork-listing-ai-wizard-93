@@ -53,7 +53,7 @@ const Products = () => {
                       <CardHeader className="pb-2">
                         <CardTitle className="flex items-center gap-2">
                           <ListOrdered className="text-homywork-purple" size={20} />
-                          Category Agent
+                          Category
                         </CardTitle>
                       </CardHeader>
                       <CardContent>
@@ -68,7 +68,7 @@ const Products = () => {
                       <CardHeader className="pb-2">
                         <CardTitle className="flex items-center gap-2">
                           <Image className="text-homywork-purple" size={20} />
-                          Image Agent
+                          Image
                         </CardTitle>
                       </CardHeader>
                       <CardContent>
@@ -83,7 +83,7 @@ const Products = () => {
                       <CardHeader className="pb-2">
                         <CardTitle className="flex items-center gap-2">
                           <FileText className="text-homywork-purple" size={20} />
-                          Title & Description Agent
+                          Title & Description
                         </CardTitle>
                       </CardHeader>
                       <CardContent>
@@ -98,7 +98,7 @@ const Products = () => {
                       <CardHeader className="pb-2">
                         <CardTitle className="flex items-center gap-2">
                           <Tag className="text-homywork-purple" size={20} />
-                          Attributes Agent
+                          Attributes
                         </CardTitle>
                       </CardHeader>
                       <CardContent>
