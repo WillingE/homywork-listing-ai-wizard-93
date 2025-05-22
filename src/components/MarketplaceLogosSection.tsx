@@ -25,7 +25,7 @@ const marketplaces = [
   },
   {
     name: "Walmart",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/c/ca/Walmart_logo.svg",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Walmart_logo.svg/2560px-Walmart_logo.svg.png",
   },
 ];
 
@@ -108,7 +108,7 @@ const MarketplaceLogosSection = () => {
             {marketplaces.map((marketplace, index) => (
               <div
                 key={index}
-                className={`w-32 h-12 flex items-center justify-center transform transition-all duration-700`}
+                className={`w-32 h-16 flex items-center justify-center transform transition-all duration-700`}
                 style={{ 
                   opacity: isSectionVisible ? 1 : 0,
                   transform: isSectionVisible ? 'translateY(0) scale(1)' : 'translateY(20px) scale(0.9)',
@@ -119,7 +119,12 @@ const MarketplaceLogosSection = () => {
                   <img
                     src={marketplace.logo}
                     alt={`${marketplace.name} logo`}
-                    className="max-h-10 max-w-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
+                    className={`max-h-12 max-w-full object-contain transition-all duration-300 ${marketplace.name === 'Walmart' ? 'filter-none' : 'filter grayscale group-hover:grayscale-0'}`}
+                    style={{
+                      background: marketplace.name === 'Walmart' ? '#0071ce' : 'transparent',
+                      padding: marketplace.name === 'Walmart' ? '4px' : '0',
+                      borderRadius: marketplace.name === 'Walmart' ? '4px' : '0',
+                    }}
                   />
                   <div className="absolute -bottom-4 left-0 right-0 mx-auto w-0 h-0.5 bg-homywork-purple group-hover:w-full transition-all duration-300"></div>
                 </div>
