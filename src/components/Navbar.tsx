@@ -1,6 +1,7 @@
+
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Box, Case, Info, DollarSign } from "lucide-react";
 import { Link } from "react-router-dom";
 import { ROUTES } from "@/routes";
 
@@ -18,30 +19,34 @@ const Navbar = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8">
-          <a
-            href="#features"
-            className="text-homywork-darkPurple/80 hover:text-homywork-purple transition-colors"
+          <Link
+            to={ROUTES.PRODUCTS}
+            className="text-homywork-darkPurple/80 hover:text-homywork-purple transition-colors flex items-center gap-2"
           >
-            Features
-          </a>
-          <a
-            href="#results"
-            className="text-homywork-darkPurple/80 hover:text-homywork-purple transition-colors"
+            <Box size={18} />
+            Products
+          </Link>
+          <Link
+            to={ROUTES.CASES}
+            className="text-homywork-darkPurple/80 hover:text-homywork-purple transition-colors flex items-center gap-2"
           >
-            Results
-          </a>
+            <Case size={18} />
+            Cases
+          </Link>
           <Link
             to={ROUTES.ABOUT}
-            className="text-homywork-darkPurple/80 hover:text-homywork-purple transition-colors"
+            className="text-homywork-darkPurple/80 hover:text-homywork-purple transition-colors flex items-center gap-2"
           >
-            About
+            <Info size={18} />
+            About Us
           </Link>
-          <a
-            href="#testimonials"
-            className="text-homywork-darkPurple/80 hover:text-homywork-purple transition-colors"
+          <Link
+            to={ROUTES.PRICING}
+            className="text-homywork-darkPurple/80 hover:text-homywork-purple transition-colors flex items-center gap-2"
           >
-            Testimonials
-          </a>
+            <DollarSign size={18} />
+            Pricing
+          </Link>
         </nav>
 
         <div className="hidden md:flex items-center gap-4">
@@ -77,43 +82,55 @@ const Navbar = () => {
       {isMenuOpen && (
         <div className="md:hidden absolute top-full left-0 right-0 bg-white border-b shadow-lg animate-fade-in">
           <div className="container-width py-4 px-4 flex flex-col gap-4">
-            <a
-              href="#features"
-              className="py-2 text-homywork-darkPurple/80 hover:text-homywork-purple transition-colors"
+            <Link
+              to={ROUTES.PRODUCTS}
+              className="py-2 text-homywork-darkPurple/80 hover:text-homywork-purple transition-colors flex items-center gap-2"
               onClick={() => setIsMenuOpen(false)}
             >
-              Features
-            </a>
-            <a
-              href="#results"
-              className="py-2 text-homywork-darkPurple/80 hover:text-homywork-purple transition-colors"
+              <Box size={18} />
+              Products
+            </Link>
+            <Link
+              to={ROUTES.CASES}
+              className="py-2 text-homywork-darkPurple/80 hover:text-homywork-purple transition-colors flex items-center gap-2"
               onClick={() => setIsMenuOpen(false)}
             >
-              Results
-            </a>
-            <a
-              href="#comparison"
-              className="py-2 text-homywork-darkPurple/80 hover:text-homywork-purple transition-colors"
+              <Case size={18} />
+              Cases
+            </Link>
+            <Link
+              to={ROUTES.ABOUT}
+              className="py-2 text-homywork-darkPurple/80 hover:text-homywork-purple transition-colors flex items-center gap-2"
               onClick={() => setIsMenuOpen(false)}
             >
-              Comparison
-            </a>
-            <a
-              href="#testimonials"
-              className="py-2 text-homywork-darkPurple/80 hover:text-homywork-purple transition-colors"
+              <Info size={18} />
+              About Us
+            </Link>
+            <Link
+              to={ROUTES.PRICING}
+              className="py-2 text-homywork-darkPurple/80 hover:text-homywork-purple transition-colors flex items-center gap-2"
               onClick={() => setIsMenuOpen(false)}
             >
-              Testimonials
-            </a>
+              <DollarSign size={18} />
+              Pricing
+            </Link>
             <div className="flex flex-col gap-2 pt-2 border-t">
               <Button
                 variant="ghost"
                 className="justify-start text-homywork-darkPurple hover:text-homywork-purple"
+                onClick={() =>
+                  (window.location.href = "https://homywork.com/PublishLogin")
+                }
               >
                 Login
               </Button>
-              <Button className="bg-homywork-purple hover:bg-homywork-purple/90 text-white w-full">
-                Start Free
+              <Button 
+                className="bg-homywork-purple hover:bg-homywork-purple/90 text-white w-full"
+                onClick={() =>
+                  (window.location.href = "https://calendly.com/tinshlee/30min")
+                }
+              >
+                Book a Demo
               </Button>
             </div>
           </div>

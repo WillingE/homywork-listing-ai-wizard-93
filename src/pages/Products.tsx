@@ -1,10 +1,9 @@
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import AboutSection from "@/components/AboutSection";
-import TestimonialsSection from "@/components/TestimonialsSection";
+import FeaturesSection from "@/components/FeaturesSection";
 
-const About = () => {
+const Products = () => {
   return (
     <div className="min-h-screen flex flex-col w-full">
       <Navbar />
@@ -12,19 +11,19 @@ const About = () => {
         <div className="container-width mx-auto px-4 py-16">
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              <span className="gradient-text">About Us</span>
+              <span className="gradient-text">Our Products</span>
             </h1>
             <p className="text-xl text-homywork-gray max-w-3xl mx-auto">
-              Homywork is a leading AI-powered tool helping sellers optimize their product listings for better visibility and conversion.
+              Discover the powerful tools that make listing creation faster and easier
+              than ever before.
             </p>
           </div>
         </div>
-        <AboutSection />
-        <TestimonialsSection />
+        <FeaturesSection />
       </main>
       <Footer />
     </div>
   );
 };
 
-export default About;
+export default Products;
