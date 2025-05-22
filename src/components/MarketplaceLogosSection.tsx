@@ -1,3 +1,4 @@
+
 import { Card } from "@/components/ui/card";
 
 const marketplaces = [
@@ -32,9 +33,9 @@ const MarketplaceLogosSection = () => {
     <section className="py-12 bg-white">
       <div className="container-width">
         <div className="text-center mb-8 animate-fade-up">
-          <h3 className="text-xl font-medium text-homywork-gray">
+          <p className="text-lg font-medium text-homywork-gray">
             Trusted by Sellers Across Major Marketplaces
-          </h3>
+          </p>
         </div>
 
         <Card className="border-none bg-gray-50 py-8 px-4 shadow-sm animate-fade-up">

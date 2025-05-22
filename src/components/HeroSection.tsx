@@ -1,57 +1,43 @@
+
 import { Button } from "@/components/ui/button";
-import { ArrowRight, ChevronRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <section className="pt-32 pb-16 md:pt-40 md:pb-24 px-4 bg-gradient-to-b from-white to-homywork-lightPurple/20">
-      <div className="container-width">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="animate-fade-up">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
-              <span className="gradient-text">Homywork</span> — The AI
-              Co-operator for Your Listings
-            </h1>
-            <p className="text-xl md:text-2xl text-homywork-gray mb-8 max-w-2xl">
-              Go from idea to live SKU in under 2 minutes. Homywork handles
-              images, titles, categories, and listings — so you can focus on
-              growth.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button
-                size="lg"
-                className="bg-homywork-purple hover:bg-homywork-purple/90 text-white"
-                onClick={() =>
-                  (window.location.href =
-                    "https://homywork.com/PublishRegister")
-                }
-              >
-                Start for Free <ArrowRight size={18} className="ml-2" />
-              </Button>
-
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-homywork-purple text-homywork-purple hover:bg-homywork-purple/10"
-                onClick={() =>
-                  (window.location.href = "https://calendly.com/tinshlee/30min")
-                }
-              >
-                Book a Demo <ChevronRight size={18} className="ml-1" />
-              </Button>
-            </div>
+    <section className="w-full">
+      {/* Main Hero */}
+      <div className="pt-24 pb-16 md:pt-32 md:pb-20 px-4 bg-white">
+        <div className="container-width text-center">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 animate-fade-up">
+            <span className="gradient-text">Homywork</span>
+          </h1>
+          <p className="text-2xl md:text-3xl text-homywork-gray mb-8 max-w-3xl mx-auto animate-fade-up" style={{ animationDelay: "0.1s" }}>
+            The AI Co-operator for Your Listings
+          </p>
+          <div className="flex justify-center animate-fade-up" style={{ animationDelay: "0.2s" }}>
+            <Button
+              size="lg"
+              className="bg-homywork-purple hover:bg-homywork-purple/90 text-white"
+              onClick={() =>
+                (window.location.href = "https://homywork.com/PublishRegister")
+              }
+            >
+              Start for Free <ArrowRight size={18} className="ml-2" />
+            </Button>
           </div>
-          <div
-            className="relative rounded-lg overflow-hidden shadow-2xl animate-fade-up"
-            style={{ animationDelay: "0.2s" }}
-          >
-            <div className="aspect-video bg-homywork-darkPurple rounded-lg overflow-hidden">
-              <img
-                src="https://i.imgur.com/i8pdkdB.png"
-                alt="Homywork Dashboard"
-                className="w-full h-full object-cover opacity-90 hover:opacity-100 transition-opacity"
-              />
-            </div>
-            <div className="absolute inset-0 bg-gradient-to-t from-homywork-darkPurple/40 to-transparent pointer-events-none"></div>
+        </div>
+      </div>
+      
+      {/* Hero Image */}
+      <div className="w-full bg-gradient-to-b from-white to-homywork-lightPurple/20 px-4 pb-16">
+        <div className="container-width">
+          <div className="relative rounded-xl overflow-hidden shadow-2xl animate-fade-up" 
+               style={{ animationDelay: "0.3s" }}>
+            <img
+              src="https://i.imgur.com/i8pdkdB.png"
+              alt="Homywork Dashboard"
+              className="w-full h-auto"
+            />
           </div>
         </div>
       </div>
