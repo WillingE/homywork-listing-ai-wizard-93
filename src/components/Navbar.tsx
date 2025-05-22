@@ -1,7 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
-import { Menu, X, Box, Case, Info, DollarSign } from "lucide-react";
+import { Menu, X, Box, Briefcase, Info, DollarSign } from "lucide-react";
 import { Link } from "react-router-dom";
 import { ROUTES } from "@/routes";
 
@@ -30,7 +30,7 @@ const Navbar = () => {
             to={ROUTES.CASES}
             className="text-homywork-darkPurple/80 hover:text-homywork-purple transition-colors flex items-center gap-2"
           >
-            <Case size={18} />
+            <Briefcase size={18} />
             Cases
           </Link>
           <Link
@@ -95,7 +95,7 @@ const Navbar = () => {
               className="py-2 text-homywork-darkPurple/80 hover:text-homywork-purple transition-colors flex items-center gap-2"
               onClick={() => setIsMenuOpen(false)}
             >
-              <Case size={18} />
+              <Briefcase size={18} />
               Cases
             </Link>
             <Link
