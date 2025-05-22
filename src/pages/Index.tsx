@@ -5,6 +5,8 @@ import VisualFeaturesSection from "@/components/VisualFeaturesSection";
 import MarketplaceLogosSection from "@/components/MarketplaceLogosSection";
 import VisualCTASection from "@/components/VisualCTASection";
 import Footer from "@/components/Footer";
+import TestimonialsSection from "@/components/TestimonialsSection";
+import InteractiveShowcaseSection from "@/components/InteractiveShowcaseSection";
 
 const Index = () => {
   return (
@@ -13,7 +15,9 @@ const Index = () => {
       <main>
         <HeroSection />
         <MarketplaceLogosSection />
+        <InteractiveShowcaseSection />
         <VisualFeaturesSection />
+        <TestimonialsSection />
         <VisualCTASection />
       </main>
       <Footer />
