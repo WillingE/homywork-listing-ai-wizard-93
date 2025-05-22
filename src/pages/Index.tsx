@@ -1,12 +1,16 @@
 
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
-import VisualFeaturesSection from "@/components/VisualFeaturesSection";
-import MarketplaceLogosSection from "@/components/MarketplaceLogosSection";
-import VisualCTASection from "@/components/VisualCTASection";
-import Footer from "@/components/Footer";
+import FeaturesSection from "@/components/FeaturesSection";
+import ResultsSection from "@/components/ResultsSection";
+import ComparisonSection from "@/components/ComparisonSection";
+import AudienceSection from "@/components/AudienceSection";
+import AboutSection from "@/components/AboutSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
-import InteractiveShowcaseSection from "@/components/InteractiveShowcaseSection";
+import CTASection from "@/components/CTASection";
+import Footer from "@/components/Footer";
+import CaseStudySection from "@/components/CaseStudySection";
+import MarketplaceLogosSection from "@/components/MarketplaceLogosSection";
 
 const Index = () => {
   return (
@@ -15,10 +19,14 @@ const Index = () => {
       <main>
         <HeroSection />
         <MarketplaceLogosSection />
-        <InteractiveShowcaseSection />
-        <VisualFeaturesSection />
+        <FeaturesSection />
+        <CaseStudySection />
+        <ResultsSection />
+        <ComparisonSection />
+        <AudienceSection />
+        <AboutSection />
         <TestimonialsSection />
-        <VisualCTASection />
+        <CTASection />
       </main>
       <Footer />
     </div>

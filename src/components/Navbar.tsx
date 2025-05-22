@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
@@ -19,30 +18,30 @@ const Navbar = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8">
-          <Link
-            to={ROUTES.PRODUCTS}
+          <a
+            href="#features"
             className="text-homywork-darkPurple/80 hover:text-homywork-purple transition-colors"
           >
-            Products
-          </Link>
-          <Link
-            to={ROUTES.CASE_STUDIES}
+            Features
+          </a>
+          <a
+            href="#results"
             className="text-homywork-darkPurple/80 hover:text-homywork-purple transition-colors"
           >
-            Case Studies
-          </Link>
+            Results
+          </a>
           <Link
-            to={ROUTES.ABOUT_US}
+            to={ROUTES.ABOUT}
             className="text-homywork-darkPurple/80 hover:text-homywork-purple transition-colors"
           >
-            About Us
+            About
           </Link>
-          <Link
-            to={ROUTES.PRICING}
+          <a
+            href="#testimonials"
             className="text-homywork-darkPurple/80 hover:text-homywork-purple transition-colors"
           >
-            Pricing
-          </Link>
+            Testimonials
+          </a>
         </nav>
 
         <div className="hidden md:flex items-center gap-4">
@@ -78,50 +77,42 @@ const Navbar = () => {
       {isMenuOpen && (
         <div className="md:hidden absolute top-full left-0 right-0 bg-white border-b shadow-lg animate-fade-in">
           <div className="container-width py-4 px-4 flex flex-col gap-4">
-            <Link
-              to={ROUTES.PRODUCTS}
+            <a
+              href="#features"
               className="py-2 text-homywork-darkPurple/80 hover:text-homywork-purple transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
-              Products
-            </Link>
-            <Link
-              to={ROUTES.CASE_STUDIES}
+              Features
+            </a>
+            <a
+              href="#results"
               className="py-2 text-homywork-darkPurple/80 hover:text-homywork-purple transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
-              Case Studies
-            </Link>
-            <Link
-              to={ROUTES.ABOUT_US}
+              Results
+            </a>
+            <a
+              href="#comparison"
               className="py-2 text-homywork-darkPurple/80 hover:text-homywork-purple transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
-              About Us
-            </Link>
-            <Link
-              to={ROUTES.PRICING}
+              Comparison
+            </a>
+            <a
+              href="#testimonials"
               className="py-2 text-homywork-darkPurple/80 hover:text-homywork-purple transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
-              Pricing
-            </Link>
+              Testimonials
+            </a>
             <div className="flex flex-col gap-2 pt-2 border-t">
               <Button
                 variant="ghost"
                 className="justify-start text-homywork-darkPurple hover:text-homywork-purple"
-                onClick={() =>
-                  (window.location.href = "https://homywork.com/PublishLogin")
-                }
               >
                 Login
               </Button>
-              <Button 
-                className="bg-homywork-purple hover:bg-homywork-purple/90 text-white w-full"
-                onClick={() =>
-                  (window.location.href = "https://homywork.com/PublishRegister")
-                }
-              >
+              <Button className="bg-homywork-purple hover:bg-homywork-purple/90 text-white w-full">
                 Start Free
               </Button>
             </div>
